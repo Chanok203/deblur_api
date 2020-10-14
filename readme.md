@@ -27,3 +27,7 @@ gunicorn server:app
     "time_process": "545.0254",
 }
 ```
+
+## Developer
+
+Chanok Pathompatai (Main Developer)
