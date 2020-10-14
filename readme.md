@@ -4,7 +4,7 @@
 
 ```runserver
 pip install -r requirements.txt
-unicorn server:app
+gunicorn server:app
 ```
 
 ## routes

@@ -18,6 +18,7 @@ def home():
         image_file.save(buffered)
         image_arr = np.array(Image.open(buffered))
         base64_string = converters.numpy_to_base64(image_arr)
+
         url = current_app.config["API_URL"]
         response = requests.post(
             url,
@@ -25,6 +26,7 @@ def home():
                 "base64_string": base64_string,
             },
         )
+
         res_json = response.json()
         original = "data:image/png;base64, " + base64_string
         result = "data:image/png;base64, " + res_json["result"]
