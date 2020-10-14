@@ -10,5 +10,5 @@ from app.deblur.models.deblur import Deblur
 
 class Config(object):
     DEBLUR_MODEL = Deblur()
-    API_URL = "http://deblur.herokuapp.com//deblur_api/v1/predict"
+    API_URL = "http://127.0.0.1:5000/deblur_api/v1/predict"
 
