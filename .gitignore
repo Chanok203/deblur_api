@@ -1,0 +1,6 @@
+.vscode
+**/.DS_Store
+python_env
+test_images
+
+**/__pycache__
